@@ -16,14 +16,38 @@ body {
 }
 .main-wrapper {
     font-family: Helvetica, Arial, sans-serif;
-    width: 90%;
-    max-width: 960px;
-    margin: auto;
-    padding-bottom: 5em;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid #D76B7C;
 
-    /*sticky footer*/
-    -webkit-flex: 1;
-    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+}
+
+.left-content, .map-wrap {
+    display: inline-block;
+}
+
+.left-content {
+    // padding: 15px;
+    width: 30%;
+    min-width: 150px;
+}
+
+.map-wrap {
+    min-width: 300px;
+    width: 70%;
+    height: 500px;
+    ng-map {
+        width: 100%;
+        height: 100%;
+        background-color: #CCC;
+          }
 }
 
 a {
@@ -45,9 +69,7 @@ a {
 }
 
 .inner-wrapper {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+    margin: 10px;
 }
 
 .inner-wrapper-header {
@@ -70,4 +92,12 @@ a {
 .bold {
     font-weight:bold;
     font-family: 'proxima_nova_ltsemibold';
+}
+
+
+@media screen and (max-width: 500px) {
+    .left-content, .map-wrap {
+        display: block;
+        width: 100%;
+    }
 }

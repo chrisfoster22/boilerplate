@@ -4,6 +4,7 @@ var myApp = angular.module('myApp', [
   'ui.router',
   'seedControllers',
   'ngSanitize',
+  'ngMap'
   ]);
 
 //you need ngSanitize for changing the innerHTML on an element using Angular.
@@ -30,5 +31,34 @@ var myApp = angular.module('myApp', [
       });
   }); //end config
 
+  angular
+.module('myApp.services', [])
+// .factory('Data', function ($http) {
+//     return {
+//         get: function () {
+//             console.log("inside function");
+//             return $http.get('/data.json');
+//         }
+//     };
+// });
+
+myApp.service('Data', function($http) {
+  return {
+      get: function () {
+          console.log("inside function");
+          return $http.get('/data.json');
+      }
+  };
+});
+
+myApp.service('Markers', function($http) {
+  return {
+      get: function () {
+          return $http.get('/markers.json');
+      }
+  };
+});
+
+// AIzaSyCeoy8WtdCmjqljQUIFuE3wffWjG03q4LU
 
 }()); //end wrapper function

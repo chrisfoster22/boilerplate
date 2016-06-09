@@ -3,7 +3,7 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: #fafafa;
     color: $readable-grey;
 
@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
     -webkit-flex-direction: column;
     flex-direction: column;
+}
+
+h1 {
+    margin: .3em 0;
 }
 .main-wrapper {
     font-family: Helvetica, Arial, sans-serif;

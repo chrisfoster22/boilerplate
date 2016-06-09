@@ -511,7 +511,12 @@ th {
             Variables and Mixins
 
 *********************************************/
-/* line 16, _modules.scss */
+/* line 7, _modules.scss */
+.header-wrap {
+  padding: 15px;
+}
+
+/* line 19, _modules.scss */
 .nav {
   border-top: 1px solid #D76B7C;
   border-bottom: 1px solid #D76B7C;
@@ -521,7 +526,7 @@ th {
 /* line 4, _base.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #fafafa;
   color: #444444;
   /*sticky footer*/
@@ -532,7 +537,12 @@ body {
   flex-direction: column;
 }
 
-/* line 17, _base.scss */
+/* line 18, _base.scss */
+h1 {
+  margin: .3em 0;
+}
+
+/* line 21, _base.scss */
 .main-wrapper {
   font-family: Helvetica, Arial, sans-serif;
   width: 100%;
@@ -547,86 +557,86 @@ body {
   flex-flow: row wrap;
 }
 
-/* line 32, _base.scss */
+/* line 36, _base.scss */
 .left-content, .map-wrap {
   display: inline-block;
 }
 
-/* line 36, _base.scss */
+/* line 40, _base.scss */
 .left-content {
   width: 30%;
   min-width: 150px;
 }
 
-/* line 42, _base.scss */
+/* line 46, _base.scss */
 .map-wrap {
   min-width: 300px;
   width: 70%;
   height: 500px;
 }
-/* line 46, _base.scss */
+/* line 50, _base.scss */
 .map-wrap ng-map {
   width: 100%;
   height: 100%;
   background-color: #CCC;
 }
 
-/* line 53, _base.scss */
+/* line 57, _base.scss */
 a {
   color: #008BC1;
   text-decoration: none;
 }
-/* line 56, _base.scss */
+/* line 60, _base.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 59, _base.scss */
+/* line 63, _base.scss */
 a:active {
   text-decoration: underline;
 }
 
 /*end a*/
-/* line 65, _base.scss */
+/* line 69, _base.scss */
 .centered {
   display: block;
   margin: auto;
   padding-top: 1em;
 }
 
-/* line 71, _base.scss */
+/* line 75, _base.scss */
 .inner-wrapper {
   margin: 10px;
 }
 
-/* line 75, _base.scss */
+/* line 79, _base.scss */
 .inner-wrapper-header {
   max-width: 670px;
 }
 
-/* line 79, _base.scss */
+/* line 83, _base.scss */
 .page-copy {
   padding: 1rem 0 1rem 0;
   line-height: 1.7rem;
 }
-/* line 83, _base.scss */
+/* line 87, _base.scss */
 .login-page .page-copy {
   padding-top: 2em;
 }
 
 /*end page-copy*/
-/* line 88, _base.scss */
+/* line 92, _base.scss */
 .centered-copy {
   text-align: center;
 }
 
-/* line 92, _base.scss */
+/* line 96, _base.scss */
 .bold {
   font-weight: bold;
   font-family: 'proxima_nova_ltsemibold';
 }
 
 @media screen and (max-width: 500px) {
-  /* line 99, _base.scss */
+  /* line 103, _base.scss */
   .left-content, .map-wrap {
     display: block;
     width: 100%;

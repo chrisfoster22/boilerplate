@@ -38,11 +38,8 @@
 
     <div class="main-wrapper">
       <div ui-view class=" left-content slide-top"></div>
-      <div class="map-wrap" ng-controller="MapController">
-        <ng-map center="[37.553, -77.462]" default-style="false" zoom="14">
-          <marker ng-repeat="pos in positions" position="{{pos.lat}}, {{pos.lng}}"></marker>
-        </ng-map>
-      </div>
+      <div class="map-wrap" ng-controller="MapController" ng-include src="'/views/map.html'"></div>
+
     </div> <!-- end .main-wrapper -->
 
 

@@ -21,9 +21,9 @@ var myApp = angular.module('myApp', [
         url: "/home",
         templateUrl: "views/home.html"
       })
-      .state('page2', {
-        url: "/page2",
-        templateUrl: "views/page2.html"
+      .state('listing', {
+        url: "/listing/:listingId",
+        templateUrl: "views/listing.html"
       })
       .state('page3', {
         url: "/page3",
@@ -45,7 +45,6 @@ var myApp = angular.module('myApp', [
 myApp.service('Data', function($http) {
   return {
       get: function () {
-          console.log("inside function");
           return $http.get('/data.json');
       }
   };
@@ -57,6 +56,12 @@ myApp.service('Markers', function($http) {
           return $http.get('/markers.json');
       }
   };
+});
+
+myApp.service('MapData', function($http) {
+  return {
+           message: "Hello"
+         };
 });
 
 // AIzaSyCeoy8WtdCmjqljQUIFuE3wffWjG03q4LU

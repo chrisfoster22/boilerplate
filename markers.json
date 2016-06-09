@@ -1,6 +1,14 @@
 {
   "markers": [
-    {"lat": "37.553", "lng": "-77.462"
+    {
+      "id": 1,
+      "name": "Lamplighter Roasting Co.",
+      "type": "coffee",
+      "address": "26 N Morris St, Richmond, VA 23220",
+      "rating": "5",
+      "img": "/img/ll_morris.jpg",
+      "lat": "37.54654",
+      "lng": "-77.45682"
     }
   ]
 }
